@@ -104,14 +104,34 @@ h1 {
    background-size: cover;
    height: 100%;
 }
-#cases {
-   background-image: url("../images/section2.jpg") !important;
+#cases{
+   background-image: url("../images/bg2.png") !important;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    height: 100%;
 }
+.justify{
+  text-align:justify;
+}
+@font-face {
+    font-family: DINLight;
+    src: url(../fonts/DINLight.ttf);
+}
+@font-face {
+    font-family: DINBdA;
+    src: url(../fonts/DINBdA.ttf);
+}
 
+.about{
+  color:#3399cc;
+  font-family: "DINLight";
+  text-align: left;
+}
+.about-bold{
+  color:#3399cc;
+  font-family: "DINBdA";
+}
 @media only screen and (max-width: 992px) {
   h1 {
     font-size: 7rem;
