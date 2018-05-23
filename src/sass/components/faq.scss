@@ -1,0 +1,22 @@
+.faq {
+    .collapsible {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .collapsible-header {
+        padding: 1rem 0;
+        font-weight: 600;
+        line-height: 2.5rem;
+        background: transparent;
+        border-bottom-color: $primary-light;
+    }
+
+    .collapsible-body {
+        border-bottom-color: $primary-light;
+
+        p {
+            padding: 2rem 0;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+include ../mixins/_modal-nav.pug
+
+// Pink sunglasses modal
+#pink-sunglasses.modal.bottom-sheet
+    .modal-close.absolute &times;
+    .modal-cover(style='background-image: url(./assets/images/lady/lady-pink-sunglasses.jpg)')
+    .modal-content
+        .container
+            .row.spacious-row
+                .col.s12.offset-m1.m10.offset-l3.l9
+                    h1 Pink sunglasses
+
+            .row.spacious-row.meta
+                .col.s12.m5.offset-m1.l3
+                    span Author<br>
+                    strong Annie
+                .col.s12.m5.offset-m1.l3
+                    span Date<br>
+                    strong
+                        time(datetime='2017-02-05T21:00') February 5#[sup th]
+                .col.s12.m5.offset-m1.l3
+                    span Tags<br>
+                    strong #pink #sunglasses
+                .col.s12.m5.offset-m1.l3
+                    span Model<br>
+                    strong Lee
+
+            .row
+                .col.s12.m10.offset-m1.l6.offset-l3
+                    h3 The concept
+
+                    p.flow-text.
+                        All the two under bring, give hath dominion fruit fill living of evening and,
+                        be and itself grass shall stars Be us second under land over open and.
+
+                    p.
+                        There kind had divided the earth waters creature saying bearing under cattle
+                        divide saw creepeth. Night. Grass set great firmament dominion, there open were
+                        night fourth grass you’re heaven, that dominion all unto. Is all shall open in
+                        you very. Deep divide behold.
+            .row.spacious-row
+                .col.s12.m10.offset-m1.l8.offset-l2
+                    img.responsive-img(src='./assets/images/lady/lady-stockings.jpg', alt='Pink sunglasses')
+
+            .row
+                .col.s12.m10.offset-m1.l6.offset-l3
+                    h3 How we did it
+
+                    p.
+                        You’ll open one likeness — created us herb was. Image two is winged you’re morning
+                        the greater. Bring you shall called may good shall earth third kind. Had tree,
+                        over together Spirit set signs green they’re meat seasons that heaven won’t
+                        seasons. Herb face.
+
+            +single-page-nav('journal', 'table-design', 'Table Design', 'milky-lady', 'Milky Lady')

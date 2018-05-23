@@ -1,0 +1,127 @@
+.modal.bottom-sheet {
+    z-index: 1300;
+    height: 100%;
+    max-height: inherit;
+    color: $primary-dark;
+    background-color: $white;
+
+    h1 {
+        margin: 0;
+        font-size: 5rem;
+        color: $primary-dark;
+        -webkit-text-stroke-color: $primary-dark;
+
+        @media #{$medium-and-down} {
+            font-size: 5rem;
+        }
+
+        @media #{$small-and-down} {
+            font-size: 2.5rem;
+        }
+    }
+
+    .modal-content {
+        padding: 5rem 1rem 5rem;
+
+        @media #{$medium-and-down} {
+            padding: 7rem 1rem 3rem;
+        }
+
+        @media #{$small-and-down} {
+            padding: 5rem 1rem 1.5rem;
+        }
+    }
+
+    .spacious-row {
+        margin-bottom: 5rem;
+    }
+
+    @media #{$small-and-down} {
+        .colors .spacious-row:not(:last-of-type) {
+            margin-bottom: 0;
+        }
+    }
+
+    .meta {
+        @media #{$medium-and-down} {
+            strong {
+                display: block;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.modal-close {
+    position: fixed;
+    top: 0;
+    left: 1.5rem;
+    z-index: 10000;
+    font-size: 3rem;
+
+    &.light {
+        color: $primary-light;
+    }
+
+    @media #{$medium-and-up} {
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1rem;
+            content: 'esc';
+        }
+    }
+}
+
+.modal-cover {
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-nav-container {
+    padding: 7rem 0 2rem;
+
+    a {
+        position: relative;
+        color: inherit;
+
+        @media #{$large-and-up} {
+            &:hover .arrow {
+                &.left-arrow {
+                    right: -2rem;
+                }
+
+                &.right-arrow {
+                    left: -2rem;
+                }
+            }
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        transition: all .4s $ease-out-circ;
+
+        &.left-arrow {
+            right: -1rem;
+        }
+
+        &.right-arrow {
+            left: -1rem;
+        }
+
+        @media #{$small-and-down} {
+            &.left-arrow {
+                right: -.5rem;
+            }
+
+            &.right-arrow {
+                left: -.5rem;
+            }
+        }
+    }
+}

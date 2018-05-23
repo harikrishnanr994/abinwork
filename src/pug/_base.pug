@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+
+    include layout/_head
+
+    body
+        // Navigation
+        include layout/_nav
+
+        // Canvas background
+        canvas#canvas.canvas
+
+        // Hero section
+        section.hero.scrollspy#intro
+            .container
+                h1 We are Nana
+
+        // Cases section
+        include sections/_cases
+
+        // Expertise section
+        include sections/_expertise
+
+        // Pricing section
+        include sections/_pricing
+
+        // FAQ section
+        include sections/_faq
+
+        // About section
+        include sections/_about
+
+        // Philosophy section
+        include sections/_philosophy
+
+        // Journal section
+        include sections/_journal
+
+        // Contact section
+        include sections/_contact
+
+        // Footer section
+        include layout/_footer
+
+        // Attached scripts
+        include layout/_scripts
+
+        block scripts

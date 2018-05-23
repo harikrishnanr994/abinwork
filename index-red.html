@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Making sure the web-site will scale fine on mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Trying to force IE to perform at its best-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Meta description, aim for about 150 characters-->
+        <meta name="description" content="Nana is a very beautiful and minimalistic theme with a gorgeous animation that will make the user remember your website and want to come back.">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="./assets/css/linea.min.css">
+        <link rel="stylesheet" href="./assets/css/nana-red.css">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./favicons/manifest.json">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Site title-->
+        <title>Nana - Red</title>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo" href="#/">Nana</a>
+                    <!-- A desktop version navigation-->
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="waves-effect waves-light" href="#intro">Intro</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#cases">Cases</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#expertise">Expertise</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#philosophy">Philosophy</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#journal">Journal</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Side navigation for mobile devices-->
+                    <ul class="side-nav" id="slide-out">
+                        <li>
+                            <a class="waves-effect waves-light" href="#intro">Intro</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#cases">Cases</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#expertise">Expertise</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#philosophy">Philosophy</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#journal">Journal</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Side nav menu button--><span class="right show-on-medium-and-down hide-on-large-only"><a class="sidenav-toggle" id="sidenav-toggle" href="#" data-activates="slide-out">Menu</a></span></div>
+            </nav>
+        </div>
+        <!-- Canvas background-->
+        <canvas class="canvas" id="canvas"></canvas>
+        <!-- Hero section-->
+
+        <section class="hero scrollspy" id="intro">
+            <div class="container">
+                <h1>We are Nana</h1>
+            </div>
+        </section>
+        <!-- Cases section-->
+
+        <section class="cases scrollspy" id="cases">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>Selected cases</h2>
+                    </div>
+                </div>
+                <div class="blocks">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <div class="row">
+                                <div class="col s12">
+                                    <a class="block rectangle-60 modal-trigger" href="#vaso-bianco" style="background-image: url(./assets/images/cases/vase-white-bg.png);">
+                                        <div class="title">Vaso Bianco</div>
+                                    </a>
+                                </div>
+                                <div class="col s12">
+                                    <a class="block rectangle-60 modal-trigger" href="#wooden-tree-2" style="background-image: url(./assets/images/cases/tree-2-white-bg.png);">
+                                        <div class="title">Wooden Tree II</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <a class="block rectangle-120 modal-trigger" href="#la-bottiglia" style="background-image: url(./assets/images/cases/white-bottle-white-bg.png);">
+                                <div class="title">La Bottiglia</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row hide" id="hidden-row">
+                        <div class="col s12 l6">
+                            <a class="block rectangle-120 modal-trigger" href="#vaso-bianco" style="background-image: url(./assets/images/cases/white-bottle-2-white-bg.png);">
+                                <div class="title">Bottiglia Alternativa</div>
+                            </a>
+                        </div>
+                        <div class="col s12 l6">
+                            <div class="row">
+                                <div class="col s12">
+                                    <a class="block rectangle-60 modal-trigger" href="#wooden-tree-2" style="background-image: url(./assets/images/cases/clock-white-bg.png);">
+                                        <div class="title">Tempo</div>
+                                    </a>
+                                </div>
+                                <div class="col s12">
+                                    <a class="block rectangle-60 modal-trigger" href="#la-bottiglia" style="background-image: url(./assets/images/cases/tree-3-white-bg.png);">
+                                        <div class="title">Wooden Tree III</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row push-row-top" id="show-all-cases-container">
+                    <div class="col s12 center">
+                        <a class="btn-large btn-flat waves-effect waves-light" id="show-all-cases">Show all cases</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vaso bianco modal-->
+        <div class="modal bottom-sheet" id="vaso-bianco">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/cases/vase-white-bg.png);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Vaso bianco</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Client<br></span>
+                            <strong>Sense</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Category<br></span>
+                            <strong>Material design</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Period<br></span>
+                            <strong>2016–2017</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Art director<br></span>
+                            <strong>Pete Johnson</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <img class="responsive-img" src="./assets/images/cases/phone-white-bg.png" alt="Blue phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <div class="col s12 m6 l6 hide-on-small-and-down"></div>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#la-bottiglia" data-next-modal="la-bottiglia"><span>Next project</span>
+                            <div class="single-page-title">
+                                <strong>La Bottiglia</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- La bottiglia modal-->
+        <div class="modal bottom-sheet" id="la-bottiglia">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/cases/white-bottle-white-bg.png);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>La Bottiglia</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Client<br></span>
+                            <strong>Ariel</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Category<br></span>
+                            <strong>Cups</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Period<br></span>
+                            <strong>2016–present</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Art director<br></span>
+                            <strong>Annie Black</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>How we did it</h3>
+                            <p>You’ll open one likeness — created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#vaso-bianco" data-previous-modal="vaso-bianco"><span>Previous project</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>Vaso Bianco</strong>
+                            </div>
+                        </a>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#wooden-tree-2" data-next-modal="wooden-tree-2"><span>Next project</span>
+                            <div class="single-page-title">
+                                <strong>Wooden Tree II</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wooden tree modal-->
+        <div class="modal bottom-sheet" id="wooden-tree-2">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/cases/tree-2-white-bg.png);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Wooden tree II</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Client<br></span>
+                            <strong>Hike</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Category<br></span>
+                            <strong>Vases</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Period<br></span>
+                            <strong>2016–2017</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Art director<br></span>
+                            <strong>Jane Fisher</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="slider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="./assets/images/cases/tree-3-white-bg.png" alt="Wooden Tree">
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/cases/tree-2-white-bg.png" alt="Wooden Tree">
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/cases/tree-1-white-bg.png" alt="Wooden Tree">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#la-bottiglia" data-previous-modal="la-bottiglia"><span>Previous project</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>La Bottiglia</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Expertise section-->
+
+        <section class="expertise scrollspy" id="expertise">
+            <div class="container center">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Our expertise</h2>
+                    </div>
+                </div>
+                <div class="row push-row flow-text">
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-heart"></i>
+                        <div class="service-title">Heartly solutions</div>
+                    </div>
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-accelerator"></i>
+                        <div class="service-title">Performance optimizations</div>
+                    </div>
+                    <div class="col s12 m6 l4 hide-on-med-only">
+                        <i class="icon-basic-target"></i>
+                        <div class="service-title">Targeted clients</div>
+                    </div>
+                </div>
+                <div class="row flow-text">
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-bolt"></i>
+                        <div class="service-title">Extreme responsiveness</div>
+                    </div>
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-joypad"></i>
+                        <div class="service-title">Lots of fun</div>
+                    </div>
+                    <div class="col s12 m6 l4 hide-on-med-only">
+                        <i class="icon-basic-signs"></i>
+                        <div class="service-title">Geolocation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing section-->
+
+        <section class="pricing scrollspy" id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>Pricing</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l4 margin-on-medium-and-down">
+                        <div class="price-box">
+                            <h4>Beginner</h4>
+                            <h5><sup>$</sup>19</h5>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>5 users<span class="info tooltipped" data-position="right" data-delay="50" data-tooltip="The number of allowed users">?</span></li>
+                                <li>Optimisation</li>
+                                <li>Caching</li>
+                                <li>Automation<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Involves Gulp commands">?</span></li>
+                                <li>Validation</li>
+                                <li>Linting</li>
+                                <li>&times;</li>
+                                <li>&times;</li>
+                            </ul>
+                            <a class="btn-large btn-flat waves-effect waves-light">Purchase</a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4 margin-on-medium-and-down">
+                        <div class="price-box featured">
+                            <h4>Professional</h4>
+                            <h5><sup>$</sup>49</h5>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>10 users<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="The number of allowed users">?</span></li>
+                                <li>Optimisation</li>
+                                <li>Caching</li>
+                                <li>Automation<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Involves Gulp commands">?</span></li>
+                                <li>Validation</li>
+                                <li>Linting</li>
+                                <li>Templating<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Includes Jade templates engine">?</span></li>
+                                <li>&times;</li>
+                            </ul>
+                            <a class="btn-large btn-flat waves-effect waves-light">Buy</a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="price-box">
+                            <h4>Enterprise</h4>
+                            <h5><sup>$</sup>199</h5>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>25 users<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="The number of allowed users">?</span></li>
+                                <li>Optimisation</li>
+                                <li>Caching</li>
+                                <li>Automation<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Involves Gulp commands">?</span></li>
+                                <li>Validation</li>
+                                <li>Linting</li>
+                                <li>Templating<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Includes Jade templates engine">?</span></li>
+                                <li>Preprocessors<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="This is for Jade, Sass and CoffeeScript">?</span></li>
+                            </ul>
+                            <a class="btn-large btn-flat waves-effect waves-light">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section-->
+
+        <section class="scrollspy faq" id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="collapsible flow-text" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header active">— Is the starter pack really free?</div>
+                                <div class="collapsible-body">
+                                    <p>A cattle she’d creepeth. That light make. Void two they’re, can’t us don’t creepeth. Fruitful there herb from signs she’d created whales them. Lights which face. Divided they’re first. Dry wherein own itself green it.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">— What is your return policy?</div>
+                                <div class="collapsible-body">
+                                    <p>May years spirit of grass shall. Form also seas had that very was lesser creature void. Fill under she’d own is light stars isn’t moved you’re.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">— Can I quit my subscription at any time?</div>
+                                <div class="collapsible-body">
+                                    <p>There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath called bearing likeness signs upon firmament fruit two life forth beginning you’re heaven fruitful under rule Don’t fourth years our. Kind itself days.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">— Can I upgrade my plan?</div>
+                                <div class="collapsible-body">
+                                    <p>Aliquam Maecenas consectetuer nisl cum inceptos. Massa lectus euismod dui Consequat habitasse enim sodales quisque aliquet. Semper condimentum id, hendrerit sodales mi nam netus dictumst platea. Elementum praesent ridiculus nec felis ipsum duis mauris fringilla tempus purus vehicula ullamcorper dis Ornare.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section-->
+
+        <section class="team scrollspy" id="about">
+            <div class="container center">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Super squad</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/annie.jpg" alt="Annie">
+                        <div class="name flow-text">Annie Redhat</div>
+                        <div class="title">CEO</div>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/carina.jpg" alt="Carina">
+                        <div class="name flow-text">Carina Cornwell</div>
+                        <div class="title">UX/UI Engineer</div>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/greg.jpg" alt="Greg">
+                        <div class="name flow-text">Greg Willson</div>
+                        <div class="title">CTO</div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/images/team/russell.jpg" alt="Russell">
+                        <div class="name flow-text">Russell Branch</div>
+                        <div class="title">R&D</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/pete.jpg" alt="Pete">
+                        <div class="name flow-text">Pete Chamberlain</div>
+                        <div class="title">Developer</div>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/olga.jpg" alt="Olga">
+                        <div class="name flow-text">Olga Rockwell</div>
+                        <div class="title">Designer</div>
+                        <ul class="social"></ul>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/jane.jpg" alt="Jane">
+                        <div class="name flow-text">Jane White</div>
+                        <div class="title">Marketing VP</div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/images/team/roo.jpg" alt="Roo">
+                        <div class="name flow-text">Roo</div>
+                        <div class="title">QA</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p class="flow-text">Want to work on projects that really matter?
+                            <a class="nobr underline" href="mailto:hr@moderat.com?subject=Job%20Application">We're hiring</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Philosophy section-->
+
+        <section class="philosophy scrollspy" id="philosophy">
+            <div class="container">
+                <div class="row push-row">
+                    <div class="col s12 center">
+                        <h2>Philosophy</h2>
+                    </div>
+                </div>
+                <div class="row big-icons-row">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-1">
+                                    <i class="icon-basic-magnifier"></i>
+                                    <h5>Discover</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-2">
+                                    <i class="icon-ecommerce-graph3"></i>
+                                    <h5>Analyse</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-3">
+                                    <i class="icon-ecommerce-graph-increase"></i>
+                                    <h5>Improve</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-4">
+                                    <i class="icon-basic-pencil-ruler"></i>
+                                    <h5>Measure</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-5">
+                                    <i class="icon-basic-mixer2"></i>
+                                    <h5>Control</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents">
+                        <div class="col s12 l8 offset-l2" id="philosophy-1">
+                            <h5>Discover</h5>
+                            <p class="flow-text center margin-top-more">Two for make behold form creature image Shee’d, waters forth, itself Blessed morning so sea midst, in tree make i bring sixth moved darkness bearing. Meat itself light created spirit under sea man.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-2">
+                            <h5>Analyse</h5>
+                            <p class="flow-text center margin-top-more">Our evening male fowl fill. Heaven made. Third replenish blessed that beginning also face may whales waters bearing man youe’ll you. Night first given he the Void also divided herb give, male seed youe’re may also female whales doesne’t let be unto also gathering which deep dominion earth.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-3">
+                            <h5>Improve</h5>
+                            <p class="flow-text center margin-top-more">Our, day had were morning beast greater a theye’re creepeth there Spirit, sea. His seasons very there earth under youe’re set be male. Them years called i yielding From image greater. Replenish deep wherein heaven over behold.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-4">
+                            <h5>Measure</h5>
+                            <p class="flow-text center margin-top-more">Said behold. In grass wone’t great male which whales creepeth lesser give signs may fill, he midst god. Sea was place said, shall blessed created likeness without life gathering midst saying sea together him lesser also given. Days i subdue image sixth done’t.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-5">
+                            <h5>Control</h5>
+                            <p class="flow-text center margin-top-more">Isn’t be one great blessed days moved meat lesser may seas bearing doesne’t wone’t doesne’t it grass beginning Male he us he likeness. Had, beginning first bring cane’t. Cane’t wone’t blessed man man every youe’ll heaven.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Journal section-->
+
+        <section class="cases scrollspy" id="journal">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>Journal posts</h2>
+                    </div>
+                </div>
+                <div class="blocks alternative">
+                    <div class="row">
+                        <article>
+                            <a class="modal-trigger col s12 l6" href="#no-men-no-cry">
+                                <div class="info">
+                                    <div class="meta">
+                                        <time datetime="2016-09-01T21:00">September 1<sup>st</sup></time>&nbsp;&mdash;&nbsp;<span>by Annie</span></div>
+                                    <h3>No Men No Cry</h3>
+                                </div>
+                                <div class="block rectangle-60" style="background-image: url(./assets/images/lady/lady-crying-portrait.jpg);"></div>
+                            </a>
+                        </article>
+                        <article>
+                            <a class="modal-trigger col s12 l6" href="#table-design">
+                                <div class="info">
+                                    <div class="meta">
+                                        <time datetime="2016-08-28T21:00">August 28<sup>th</sup></time>&nbsp;&mdash;&nbsp;<span>by Pete</span></div>
+                                    <h3>Table design</h3>
+                                </div>
+                                <div class="block rectangle-60" style="background-image: url(./assets/images/lady/lady-on-table.jpg);"></div>
+                            </a>
+                        </article>
+                        <article>
+                            <a class="modal-trigger col s12 l6" href="#pink-sunglasses">
+                                <div class="info">
+                                    <div class="meta">
+                                        <time datetime="2016-08-15T21:00">August 15<sup>th</sup></time>&nbsp;&mdash;&nbsp;<span>by Greg</span></div>
+                                    <h3>Pink sunglasses</h3>
+                                </div>
+                                <div class="block rectangle-60" style="background-image: url(./assets/images/lady/lady-pink-sunglasses.jpg);"></div>
+                            </a>
+                        </article>
+                        <article>
+                            <a class="modal-trigger col s12 l6" href="#milky-lady">
+                                <div class="info">
+                                    <div class="meta">
+                                        <time datetime="2016-07-23T21:00">July 23<sup>rd</sup></time>&nbsp;&mdash;&nbsp;<span>by Annie</span></div>
+                                    <h3>Milky Lady</h3>
+                                </div>
+                                <div class="block rectangle-60" style="background-image: url(./assets/images/lady/lady-milk.jpg);"></div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- No men no cry modal-->
+        <div class="modal bottom-sheet" id="no-men-no-cry">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/lady/lady-crying-portrait.jpg);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>No Men No Cry</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Author<br></span>
+                            <strong>Pete</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Date<br></span>
+                            <strong>
+                                <time datetime="2017-02-01T21:00">February 1<sup>st</sup></time>
+                            </strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Tags<br></span>
+                            <strong>#men #crying</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Model<br></span>
+                            <strong>Chloë</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                        </div>
+                    </div>
+                    <div class="row spacious-row">
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <img class="responsive-img" src="./assets/images/lady/lady-swimming.jpg" alt="Lady swimming">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>How we did it</h3>
+                            <p>You’ll open one likeness — created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <div class="col s12 m6 l6 hide-on-small-and-down"></div>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#table-design" data-next-modal="table-design"><span>Next story</span>
+                            <div class="single-page-title">
+                                <strong>Table Design</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Table design modal-->
+        <div class="modal bottom-sheet" id="table-design">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/lady/lady-on-table.jpg);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Table design</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Author<br></span>
+                            <strong>Greg</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Date<br></span>
+                            <strong>
+                                <time datetime="2017-01-15T21:00">January 15<sup>th</sup></time>
+                            </strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Tags<br></span>
+                            <strong>#milk #lady</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Model<br></span>
+                            <strong>Victoria</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>How we did it</h3>
+                            <p>You’ll open one likeness — created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#no-men-no-cry" data-previous-modal="no-men-no-cry"><span>Previous story</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>No Men No Cry</strong>
+                            </div>
+                        </a>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#pink-sunglasses" data-next-modal="pink-sunglasses"><span>Next story</span>
+                            <div class="single-page-title">
+                                <strong>Pink Sunglasses</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pink sunglasses modal-->
+        <div class="modal bottom-sheet" id="pink-sunglasses">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/lady/lady-pink-sunglasses.jpg);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Pink sunglasses</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Author<br></span>
+                            <strong>Annie</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Date<br></span>
+                            <strong>
+                                <time datetime="2017-02-05T21:00">February 5<sup>th</sup></time>
+                            </strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Tags<br></span>
+                            <strong>#pink #sunglasses</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Model<br></span>
+                            <strong>Lee</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                        </div>
+                    </div>
+                    <div class="row spacious-row">
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <img class="responsive-img" src="./assets/images/lady/lady-stockings.jpg" alt="Pink sunglasses">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>How we did it</h3>
+                            <p>You’ll open one likeness — created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#table-design" data-previous-modal="table-design"><span>Previous story</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>Table Design</strong>
+                            </div>
+                        </a>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#milky-lady" data-next-modal="milky-lady"><span>Next story</span>
+                            <div class="single-page-title">
+                                <strong>Milky Lady</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Milky lady modal-->
+        <div class="modal bottom-sheet" id="milky-lady">
+            <div class="modal-close absolute light">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/lady/lady-milk.jpg);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Milky lady</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>Author<br></span>
+                            <strong>Greg</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Date<br></span>
+                            <strong>
+                                <time datetime="2017-01-15T21:00">January 15<sup>th</sup></time>
+                            </strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Tags<br></span>
+                            <strong>#milk #lady</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>Model<br></span>
+                            <strong>Victoria</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                            </p>
+                            <p>There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <blockquote><span class="quote">“</span>Said dominion two all their which air can’t appear earth female abundantly.”
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>How we did it</h3>
+                            <p>You’ll open one likeness — created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#pink-sunglasses" data-previous-modal="pink-sunglasses"><span>Previous story</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>Pink Sunglasses</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact section-->
+
+        <section class="scrollspy" id="contact">
+            <div class="container">
+                <div class="row center">
+                    <div class="col s12">
+                        <h2 class="white-text">Message us</h2>
+                    </div>
+                </div>
+                <form id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input id="name" type="text" name="name">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input id="email" type="email" name="email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field">
+                                <textarea class="materialize-textarea" id="message" name="message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center">
+                            <button class="btn btn-large btn-flat waves-effect waves-light" id="send-message" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="center-on-medium-and-down">
+            <div class="container">
+                <div class="row flow-text">
+                    <div class="col s12 l6">
+                        <address>B R James, 30 W 47th St
+                            <br>New York, NY 10036
+                            <br>
+                        </address>
+                        <a class="underline waves-effect waves-light" href="https://maps.google.com?daddr=B+R+James+30+W=47th+St+NY+10036" target="_blank">Get directions &nearr;</a>
+                    </div>
+                    <div class="col s12 l6">
+                        <p>
+                            <a class="underline waves-effect waves-light" href="mailto:hi@nana.io">hi@nana.io</a>
+                            <br>+1-917-643-4346</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section-->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">Thanks for coming. &copy; 2010–2017 Nana</div>
+                    <div class="col s12 l6">
+                        <a class="underline waves-effect waves-light" href="#!">Facebook</a> •
+                        <a class="underline waves-effect waves-light" href="#!">Twitter</a> •
+                        <a class="underline waves-effect waves-light" href="#!">VK</a> •
+                        <a class="underline waves-effect waves-light" href="#!">Github</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Attached scripts-->
+        <!-- Libraries-->
+        <script src="./libs/jquery/jquery.min.js"></script>
+        <script src="./libs/materialize/js/materialize.min.js"></script>
+        <!-- Nana scripts-->
+        <script src="./assets/js/config.js"></script>
+        <script src="./assets/js/nana.js"></script>
+        <script src="./assets/js/neon-bubbles-red.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+
+    include layout/_head
+        block style
+            link(rel='stylesheet', href='./assets/css/demo.css')
+
+    body.demo
+        .container
+            .row
+                .col.s12.center
+                    h1 Choose your Nana
+            .row
+                .col.s12.l6
+                    a(href='index-dark-indigo.html')
+                        img.responsive-img(src='./assets/images/demo/dark-indigo.png', alt='Demo Screen')
+                        .flow-text Dark Indigo
+
+                .col.s12.l6
+                    a(href='index-purple.html')
+                        img.responsive-img(src='./assets/images/demo/purple.png', alt='Demo Screen')
+                        .flow-text Purple
+
+                .col.s12.l6
+                    a(href='index-green.html')
+                        img.responsive-img(src='./assets/images/demo/green.png', alt='Demo Screen')
+                        .flow-text Green
+
+                .col.s12.l6
+                    a(href='index-blue-grey.html')
+                        img.responsive-img(src='./assets/images/demo/blue-grey.png', alt='Demo Screen')
+                        .flow-text Blue Grey
+
+                .col.s12.l6
+                    a(href='index-red.html')
+                        img.responsive-img(src='./assets/images/demo/red.png', alt='Demo Screen')
+                        .flow-text Red
+
+                .col.s12.l6
+                    a(href='index-pink.html')
+                        img.responsive-img(src='./assets/images/demo/pink.png', alt='Demo Screen')
+                        .flow-text Pink
+
+            .row
+                .col.s12.center.spacious
+                    a(href='?') Purchase Now
+                        i.icon-ecommerce-cart-check
+
+        footer
+            .container
+                .row
+                    .col.s12.center
+                        a(href='http://themeforest.net/user/pimmey/portfolio?ref=pimmey') &copy; pimmey

@@ -1,0 +1,17 @@
+.navbar-fixed
+    nav
+        .nav-wrapper
+
+            a.brand-logo(href='#/') Nana
+
+            // A desktop version navigation
+            ul.right.hide-on-med-and-down
+                include ../components/_nav-items.pug
+
+            // Side navigation for mobile devices
+            ul#slide-out.side-nav
+                include ../components/_nav-items.pug
+
+            // Side nav menu button
+            span.right.show-on-medium-and-down.hide-on-large-only
+                a#sidenav-toggle.sidenav-toggle(href='#', data-activates='slide-out') Menu

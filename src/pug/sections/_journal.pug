@@ -1,0 +1,52 @@
+section.cases.scrollspy#journal
+    .container
+        .row
+            .col.s12.center
+                h2 Journal posts
+
+        .blocks.alternative
+            .row
+                article
+                    a.modal-trigger.col.s12.l6(href='#no-men-no-cry')
+                        .info
+                            .meta
+                                time(datetime='2016-09-01T21:00') September 1#[sup st]
+                                | &nbsp;&mdash;&nbsp;
+                                span by Annie
+                            h3 No Men No Cry
+                        .block.rectangle-60(style='background-image: url(./assets/images/lady/lady-crying-portrait.jpg)')
+
+                article
+                    a.modal-trigger.col.s12.l6(href='#table-design')
+                        .info
+                            .meta
+                                time(datetime='2016-08-28T21:00') August 28#[sup th]
+                                | &nbsp;&mdash;&nbsp;
+                                span by Pete
+                            h3 Table design
+                        .block.rectangle-60(style='background-image: url(./assets/images/lady/lady-on-table.jpg)')
+
+                article
+                    a.modal-trigger.col.s12.l6(href='#pink-sunglasses')
+                        .info
+                            .meta
+                                time(datetime='2016-08-15T21:00') August 15#[sup th]
+                                | &nbsp;&mdash;&nbsp;
+                                span by Greg
+                            h3 Pink sunglasses
+                        .block.rectangle-60(style='background-image: url(./assets/images/lady/lady-pink-sunglasses.jpg)')
+
+                article
+                    a.modal-trigger.col.s12.l6(href='#milky-lady')
+                        .info
+                            .meta
+                                time(datetime='2016-07-23T21:00') July 23#[sup rd]
+                                | &nbsp;&mdash;&nbsp;
+                                span by Annie
+                            h3 Milky Lady
+                        .block.rectangle-60(style='background-image: url(./assets/images/lady/lady-milk.jpg)')
+
+include ../modals/_no-men-no-cry
+include ../modals/_table-design
+include ../modals/_pink-sunglassses
+include ../modals/_milky-lady

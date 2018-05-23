@@ -1,0 +1,17 @@
+.slider {
+    .slides {
+        background-color: transparent;
+    }
+
+    .indicators .indicator-item {
+        background-color: transparentize($primary-dark, .5);
+
+        &.active {
+            background-color: $primary-dark;
+        }
+
+        &:hover {
+            background-color: transparentize($primary-dark, .25);
+        }
+    }
+}

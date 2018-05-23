@@ -1,0 +1,52 @@
+.input-field label {
+    left: 0;
+    color: $primary-light;
+}
+
+input[type=text],
+input[type=email],
+input[type=email],
+textarea.materialize-textarea {
+    color: $primary-light;
+    border-bottom-color: $primary-light;
+    border-bottom-width: 2px;
+}
+
+.input-field input[type=text]:focus:not([readonly]),
+.input-field input[type=email]:focus,
+.input-field input[type=email]:focus:not([readonly]),
+input[type=email]:focus,
+input[type=email]:focus:not([readonly]),
+textarea.materialize-textarea:focus,
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom-color: $primary-light;
+    border-bottom-width: 2px;
+    box-shadow: none;
+
+    + label {
+        color: $primary-light;
+    }
+}
+
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+textarea.materialize-textarea.valid {
+    border-bottom-color: $primary-light;
+    box-shadow: none;
+}
+
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid,
+textarea.materialize-textarea.invalid {
+    border-bottom-color: $primary-light;
+    box-shadow: none;
+}
+
+.input-field .prefix.active {
+    color: $primary-light;
+}
+
+form {
+    padding: 1rem;
+    background: transparentize($primary-light, .93);
+}

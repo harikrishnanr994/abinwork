@@ -1,0 +1,63 @@
+.philosophy {
+    padding: 5rem 0 4rem;
+
+    @media #{$small-and-down} {
+        padding: 3rem 0 2rem;
+    }
+
+    i {
+        font-size: 5rem;
+
+        @media #{$medium-and-down} {
+            font-size: 4rem;
+        }
+
+        @media #{$small-and-down} {
+            font-size: 3rem;
+        }
+    }
+
+    .tabs {
+        height: auto;
+        margin-bottom: 2rem;
+        background-color: transparent;
+
+        .tab {
+            height: auto;
+            letter-spacing: normal;
+            color: $primary-light;
+            text-transform: none;
+
+            h5 {
+                @media #{$small-and-down} {
+                    display: none;
+                }
+            }
+
+            a {
+                color: transparentize($primary-light, .4);
+
+                &.active {
+                    color: $primary-light;
+                }
+            }
+        }
+    }
+
+    .tab-contents {
+        h5 {
+            display: none;
+
+            @media #{$small-and-down} {
+                display: block;
+                //margin: 2rem 0 -2rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .indicator {
+        height: 3px;
+        background-color: $primary-light;
+    }
+}

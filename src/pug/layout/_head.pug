@@ -1,0 +1,30 @@
+head
+    meta(charset='utf-8')
+
+    // Making sure the web-site will scale fine on mobiles
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    // Trying to force IE to perform at its best
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+
+    // Meta description, aim for about 150 characters
+    meta(name='description', content='Nana is a very beautiful and minimalistic theme with a gorgeous animation that will make the user remember your website and want to come back.')
+
+    // Stylesheets
+    link(rel='stylesheet', href='./libs/materialize/css/materialize.min.css')
+    link(rel='stylesheet', href='./assets/css/linea.min.css')
+
+    block style
+
+    // Favicons
+    link(rel='apple-touch-icon', sizes='180x180', href='./favicons/apple-touch-icon.png')
+    link(rel='icon', type='image/png', href='./favicons/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='./favicons/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='./favicons/manifest.json')
+    link(rel='shortcut icon', href='favicon.ico')
+    meta(name='msapplication-config', content='./favicons/browserconfig.xml')
+    meta(name='theme-color', content='#ffffff')
+
+    // Site title
+    block title
+        title Nana

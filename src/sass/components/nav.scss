@@ -1,0 +1,90 @@
+nav {
+    height: 100px;
+    line-height: 100px;
+    background: transparentize($primary-dark, .4);
+    box-shadow: none;
+    transition: background .4s $ease-out-circ;
+
+    &:hover {
+        background: transparentize($primary-dark, .15);
+    }
+
+    a {
+        color: $primary-light;
+    }
+
+    ul:not(.side-nav) a {
+        position: relative;
+        padding: 0;
+        margin: 0 1rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: $primary-light;
+
+        &.waves-effect {
+            overflow: visible;
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &::after,
+        &::before {
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $primary-light;
+            content: '';
+            transition: all .4s $ease-out-circ;
+        }
+
+        &::before {
+            top: 1.5rem;
+        }
+
+        &::after {
+            bottom: 1.5rem;
+            left: 100%;
+        }
+
+        &.active::after,
+        &.active::before {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .brand-logo {
+        top: 0;
+        padding: 0 2rem;
+        color: $primary-light;
+    }
+
+    .sidenav-toggle {
+        margin-right: 1rem;
+    }
+}
+
+.side-nav {
+    background-color: transparentize($primary-dark, .6);
+    box-shadow: none;
+
+    a {
+        height: auto;
+        padding: 1rem 3rem;
+        line-height: inherit;
+        color: $primary-light;
+
+        &.active::after {
+            position: absolute;
+            left: 2rem;
+            content: '•';
+        }
+    }
+}
+
+.navbar-fixed {
+    height: 0;
+}

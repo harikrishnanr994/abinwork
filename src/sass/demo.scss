@@ -1,0 +1,43 @@
+@import 'components/materialize-colors';
+@import 'components/variables';
+$demo-red: #ff3b35;
+$demo-dark: #26052b;
+
+.demo {
+    background: $demo-dark;
+
+    h1 {
+        font-size: 8rem;
+        font-weight: 700;
+        letter-spacing: .5rem;
+        color: $demo-red;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: $demo-red;
+        -webkit-text-stroke-width: 4px;
+
+        @media #{$medium-and-down} {
+            font-size: 7rem;
+            -webkit-text-stroke-width: 3px;
+        }
+
+        @media #{$small-and-down} {
+            font-size: 5rem;
+            -webkit-text-stroke-width: 2px;
+        }
+    }
+
+    .flow-text,
+    a {
+        color: $demo-red;
+    }
+
+    .flow-text {
+        margin-bottom: 2rem;
+    }
+
+    .spacious {
+        padding: 5rem 1rem;
+        font-size: 4rem;
+    }
+}

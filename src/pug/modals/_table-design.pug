@@ -1,0 +1,52 @@
+include ../mixins/_modal-nav.pug
+
+// Table design modal
+#table-design.modal.bottom-sheet
+    .modal-close.absolute &times;
+    .modal-cover(style='background-image: url(./assets/images/lady/lady-on-table.jpg)')
+    .modal-content
+        .container
+            .row.spacious-row
+                .col.s12.offset-m1.m10.offset-l3.l9
+                    h1 Table design
+
+            .row.spacious-row.meta
+                .col.s12.m5.offset-m1.l3
+                    span Author<br>
+                    strong Greg
+                .col.s12.m5.offset-m1.l3
+                    span Date<br>
+                    strong
+                        time(datetime='2017-01-15T21:00') January 15#[sup th]
+                .col.s12.m5.offset-m1.l3
+                    span Tags<br>
+                    strong #milk #lady
+                .col.s12.m5.offset-m1.l3
+                    span Model<br>
+                    strong Victoria
+
+            .row
+                .col.s12.m10.offset-m1.l6.offset-l3
+                    h3 The concept
+
+                    p.flow-text.
+                        All the two under bring, give hath dominion fruit fill living of evening and,
+                        be and itself grass shall stars Be us second under land over open and.
+
+                    p.
+                        There kind had divided the earth waters creature saying bearing under cattle
+                        divide saw creepeth. Night. Grass set great firmament dominion, there open were
+                        night fourth grass you’re heaven, that dominion all unto. Is all shall open in
+                        you very. Deep divide behold.
+
+            .row
+                .col.s12.m10.offset-m1.l6.offset-l3
+                    h3 How we did it
+
+                    p.
+                        You’ll open one likeness — created us herb was. Image two is winged you’re morning
+                        the greater. Bring you shall called may good shall earth third kind. Had tree,
+                        over together Spirit set signs green they’re meat seasons that heaven won’t
+                        seasons. Herb face.
+
+            +single-page-nav('journal', 'no-men-no-cry', 'No Men No Cry', 'pink-sunglasses', 'Pink Sunglasses')

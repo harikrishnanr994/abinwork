@@ -1,0 +1,42 @@
+section.cases.scrollspy#cases
+    .container
+        .row
+            .col.s12.center
+                h2 Selected cases
+        .blocks
+            .row
+                .col.s12.l6
+                    .row
+                        .col.s12
+                            a(href='#vaso-bianco', style='background-image: url(./assets/images/cases/vase-white-bg.png)').block.rectangle-60.modal-trigger
+                                .title Vaso Bianco
+
+                        .col.s12
+                            a(href='#wooden-tree-2', style='background-image: url(./assets/images/cases/tree-2-white-bg.png)').block.rectangle-60.modal-trigger
+                                .title Wooden Tree II
+
+                .col.s12.l6
+                    a(href='#la-bottiglia', style='background-image: url(./assets/images/cases/white-bottle-white-bg.png)').block.rectangle-120.modal-trigger
+                        .title La Bottiglia
+
+            .row.hide#hidden-row
+                .col.s12.l6
+                    a(href='#vaso-bianco', style='background-image: url(./assets/images/cases/white-bottle-2-white-bg.png)').block.rectangle-120.modal-trigger
+                        .title Bottiglia Alternativa
+
+                .col.s12.l6
+                    .row
+                        .col.s12
+                            a(href='#wooden-tree-2', style='background-image: url(./assets/images/cases/clock-white-bg.png)').block.rectangle-60.modal-trigger
+                                .title Tempo
+                        .col.s12
+                            a(href='#la-bottiglia', style='background-image: url(./assets/images/cases/tree-3-white-bg.png)').block.rectangle-60.modal-trigger
+                                .title Wooden Tree III
+
+        .row.push-row-top#show-all-cases-container
+            .col.s12.center
+                a.btn-large.btn-flat.waves-effect.waves-light#show-all-cases Show all cases
+
+include ../modals/_vaso-bianco
+include ../modals/_la-bottiglia
+include ../modals/_wooden-tree-2

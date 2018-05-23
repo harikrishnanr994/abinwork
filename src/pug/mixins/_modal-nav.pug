@@ -1,0 +1,19 @@
+mixin single-page-nav(category, previousHref, previousTitle, nextHref, nextTitle)
+
+    - var entity = category === 'cases' ? 'project' : 'story'
+
+    .row.modal-nav-container.flow-text
+        if (previousHref && previousTitle)
+            a(href='#' + previousHref, data-previous-modal=previousHref).modal-nav.col.s12.m6.l6
+                span Previous #{entity}
+                .single-page-title #[span.arrow.right-arrow &larr;]
+                    strong #{previousTitle}
+        else
+            .col.s12.m6.l6.hide-on-small-and-down
+
+        if (nextHref && nextTitle)
+            a(href='#' + nextHref, data-next-modal=nextHref).modal-nav.col.s12.m6.l6.right-align
+                span Next #{entity}
+                .single-page-title
+                    strong #{nextTitle}
+                    span.arrow.left-arrow &rarr;

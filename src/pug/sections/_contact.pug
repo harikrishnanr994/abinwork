@@ -1,0 +1,40 @@
+section.scrollspy#contact
+    .container
+        .row.center
+            .col.s12
+                h2.white-text Message us
+        form#mail-form(action='mailer/mailer.php', novalidate, autocomplete='off')
+            .row
+                .col.s12.l6
+                    .input-field
+                        input#name(type='text', name='name')
+                        label(for='name') Name
+                .col.s12.l6
+                    .input-field
+                        input#email(type='email', name='email')
+                        label(for='email') Email
+            .row
+                .col.s12
+                    .input-field
+                        textarea#message.materialize-textarea(name='message')
+                        label(for='message') Message
+            .row
+                .col.s12.center
+                    button#send-message.btn.btn-large.btn-flat.waves-effect.waves-light(type='submit') Send
+
+section.center-on-medium-and-down
+    .container
+        .row.flow-text
+            .col.s12.l6
+                address
+                    | B R James, 30 W 47th St
+                    br
+                    | New York, NY 10036
+                    br
+                a.underline.waves-effect.waves-light(href='https://maps.google.com?daddr=B+R+James+30+W=47th+St+NY+10036', target='_blank') Get directions &nearr;
+
+            .col.s12.l6
+                p
+                    a.underline.waves-effect.waves-light(href='mailto:hi@nana.io') hi@nana.io
+                    br
+                    | +1-917-643-4346
