@@ -1,5 +1,4 @@
 body {
-    overflow-x: hidden;
     background-color: $primary-dark;
 }
 
@@ -36,7 +35,7 @@ section {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1400px;
 
     @media #{$medium-and-up} {

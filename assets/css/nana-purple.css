@@ -54,6 +54,7 @@ html {
 }
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 body,
@@ -75,13 +76,13 @@ nav .brand-logo {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #0099cc;
   background: rgba(255,255,255,0.2);
-background: -moz-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.2)), color-stop(50%, rgba(255,255,255,0.3)), color-stop(70%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
-background: -webkit-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
-background: -o-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
-background: -ms-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
-background: linear-gradient(to right, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.2)), color-stop(50%, rgba(255,255,255,0.3)), color-stop(70%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 
 }
 nav .brand-logo img {
@@ -96,18 +97,24 @@ h1 {
   font-weight: 700;
   -webkit-text-stroke-width: 4px;
 }
+.home-logo{
+  width: 50%;
+}
 
 #home {
    background-image: url("../images/section1.jpg") !important;
    background-position: center;
-   background-repeat: no-repeat;
+   background-repeat:repeat;
    background-size: cover;
+   width: 100% !important;
    height: 100%;
+   padding-top: 50px;
+   padding-bottom: 20px;
 }
 #about{
    background-image: url("../images/bg2.png") !important;
    background-position: center;
-   background-repeat: no-repeat;
+   background-repeat:repeat;
    background-size: cover;
    height: 100%;
 }
@@ -115,16 +122,78 @@ h1 {
 #team{
    background-image: url("../images/bg3.png") !important;
    background-position: center;
-   background-repeat: no-repeat;
+   background-repeat:repeat;
    background-size: cover;
    height: 100%;
 }
-.team1{
-  width: 100%;
-  margin-left:5%;
-  margin-right: 5%;
-  overflow-x: scroll !important;
+
+#shows{
+   background-image: url("../images/section3.jpg") !important;
+   background-position: center;
+   background-repeat:repeat;
+   background-size: cover;
+   height: 100%;
 }
+
+#events{
+   background-image: url("../images/section4.png") !important;
+   background-position: center;
+   background-repeat:repeat;
+   background-size: cover;
+   height: 100%;
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+
+
+.icon {
+  background: rgba(255, 255, 255, .0);
+  color: rgba(255, 255, 255, .3);
+	font-family: 'FontAwesome';
+	font-size: 40px;
+	line-height: 60px;
+  margin-top: -30px;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 60px; height: 60px;
+}
+.owl-next,
+.owl-prev {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 20%;
+}
+.owl-next {
+  right: 0;
+  margin-right:-100px;
+}
+.owl-prev {
+  left: 0;
+  margin-left:-100px;
+}
+.owl-next:hover .icon,
+.owl-prev:hover .icon {
+  background: rgba(48, 117, 70, .0);
+  color: rgba(255, 255, 255, .9);
+}
+.icon-arrow-left7 { left: 0; }
+.icon-arrow-left7:before { content: "\f053"; }
+.icon-arrow-right7 { right: 0; }
+.icon-arrow-right7:before { content: "\f054"; }
+
 
 .justify{
   text-align:justify;
@@ -147,10 +216,26 @@ h1 {
   color:#3399cc;
   font-family: "DINBdA";
 }
+
+.white-bg{
+  background: #fff;
+  min-height: 150px;
+  padding: 20px;
+}
+.show{
+  margin-top: 5rem;
+  font-size: 13px;
+  color:#fff;
+  font-family: "DINLight";
+  text-align: justify;
+}
 @media only screen and (max-width: 992px) {
   h1 {
     font-size: 7rem;
     -webkit-text-stroke-width: 3px;
+  }
+  .home-logo{
+    width: 60%;
   }
 }
 
@@ -158,6 +243,9 @@ h1 {
   h1 {
     font-size: 5rem;
     -webkit-text-stroke-width: 2px;
+  }
+  .home-logo{
+    width: 70%;
   }
 }
 
