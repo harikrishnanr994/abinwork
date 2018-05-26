@@ -98,7 +98,7 @@ h1 {
   -webkit-text-stroke-width: 4px;
 }
 .home-logo{
-  width: 50%;
+  width: 40% !important;
 }
 
 #home {
@@ -136,11 +136,87 @@ h1 {
 }
 
 #events{
-   background-image: url("../images/section4.png") !important;
+   background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/section4.png") !important;
    background-position: center;
    background-repeat:repeat;
    background-size: cover;
    height: 100%;
+}
+
+
+.event_pic{
+  width: 42.5%;
+  margin-left: 3.7rem;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  z-index: 5;
+}
+.youtube{
+  width: 100px;
+  height: auto;
+  position: fixed;
+  z-index: 20;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .fg{
+  margin-top: -190px;
+  margin-left: 25px;
+  z-index: 10;
+}
+.container .youtube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px !important;
+    height: auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 12px 24px;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+.event-content{
+  text-align:center;
+  color:#fff;
+  margin-top: 50px;
+}
+
+#contact{
+   background-image: url("../images/section5.jpg") !important;
+   background-position: center;
+   background-repeat:repeat;
+   background-size: cover;
+   height: 100%;
+   color:#fff;
+}
+.contact .home-logo{
+  width: 100% !important;
+}
+footer{
+  background-image: url("../images/footer1.jpg") !important;
+  background-position: center;
+  background-repeat:repeat;
+  background-size: cover;
+  color:#fff;
+}
+
+.social{
+  width: 50px !important;
+  margin-right: 10px;
 }
 
 @font-face {
