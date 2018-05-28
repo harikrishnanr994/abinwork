@@ -169,20 +169,15 @@ h1 {
   z-index: 20;
 }
 
-.container {
+.container{
     position: relative;
     width: 100%;
     max-width: 500px;
 }
 
-.container img {
-    width: 100%;
-    height: auto;
-}
-
 .container .fg{
-  margin-top: -190px;
-  margin-left: 25px;
+  margin-top: 20%;
+  font-size: 10px;
   z-index: 10;
 }
 .container .youtube {
@@ -223,10 +218,20 @@ h1 {
      left: 0;
      right: 0;
      bottom: 0;
-     z-index: 99;
+     z-index: 299;
     height: 100%;
+    width: 100%;
  }
-
+ #status  {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2000;
+  }
 
 #contact{
    background-image: url("../images/section5.jpg") !important;
@@ -249,6 +254,7 @@ address a{
 }
 .booking{
   margin-left: 5rem !important;
+  margin-top: -4rem !important;
 }
 footer{
   background-image: url("../images/footer1.jpg") !important;
@@ -277,19 +283,6 @@ font-style : normal;
 
 
 
-.icon {
-  background: rgba(255, 255, 255, .0);
-  color: rgba(255, 255, 255, .3);
-	font-family: 'FontAwesome';
-	font-size: 40px;
-	line-height: 60px;
-  margin-top: -30px;
-  position: absolute;
-  top: 40%;
-  text-align: center;
-  width: 40px !important;
-   height: 40px !important;
-}
 .owl-next,
 .owl-prev {
   height: 100%;
@@ -317,7 +310,7 @@ font-style : normal;
 
 
 .justify{
-  text-align:justify !importantr;
+  text-align:justify !important;
 }
 @font-face {
     font-family: DINLight;
@@ -360,11 +353,15 @@ font-style : normal;
   padding: 20px;
 }
 .show{
-  margin-top: 2rem;
+  margin-top: 1em;
+  padding-top:1rem;
   font-size: 13px;
   color:#fff;
   font-family: "DINLight";
   text-align: justify;
+  line-height:1.5em;
+  height:15em;
+  overflow-y:scroll;
 }
 @media only screen and (max-width: 992px) {
   h1 {
@@ -373,6 +370,18 @@ font-style : normal;
   }
   .home-logo{
     width: 60%;
+  }
+  .container .fg{
+    margin-top: -160px;
+    margin-left: 25px;
+    z-index: 10;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container .fg{
+    margin-top: -160px;
+    margin-left: 25px;
+    z-index: 10;
   }
 }
 
@@ -384,18 +393,23 @@ font-style : normal;
   .home-logo{
     width: 70%;
   }
-}
+
 
 h2 {
   font-size: 4.5rem;
   font-weight: 600;
   -webkit-text-stroke-width: 2px;
 }
-
+}
 @media only screen and (max-width: 992px) {
   h2 {
     font-size: 3.5rem;
     -webkit-text-stroke-width: 3px;
+  }
+  .container .fg{
+    margin-top: -160px;
+    margin-left: 25px;
+    z-index: 10;
   }
 }
 
