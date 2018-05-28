@@ -28,9 +28,18 @@
         <meta name="msapplication-config" content="./favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         <!-- Site title-->
-        <title>Nana - Purple</title>
+        <title>V J Entertainments</title>
+        <script src="./libs/jquery/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(window).on('load', function() { // makes sure the whole site is loaded
+          $('#status').fadeOut(); // will first fade out the loading animation
+          $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+          $('body').delay(350).css({'overflow':'visible'});
+        })
+        </script>
+
     </head>
-    <body>
+    <body >
         <!-- Navigation-->
         <div class="navbar-fixed">
             <nav>
@@ -42,19 +51,19 @@
                             <a class="waves-effect waves-light" href="#home"></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#about">Home</a>
+                            <a class="waves-effect waves-light" href="#about">HOME</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#team">Team</a>
+                            <a class="waves-effect waves-light" href="#team">TEAM</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#shows">Shows</a>
+                            <a class="waves-effect waves-light" href="#shows">SHOWS</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#events">Events</a>
+                            <a class="waves-effect waves-light" href="#events">EVENTS</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#contact">Contact</a>
+                            <a class="waves-effect waves-light" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                     <!-- Side navigation for mobile devices-->
@@ -63,19 +72,19 @@
                             <a class="waves-effect waves-light" href="#home"></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#about">Home</a>
+                            <a class="waves-effect waves-light" href="#about">HOME</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#team">Team</a>
+                            <a class="waves-effect waves-light" href="#team">TEAM</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#shows">Shows</a>
+                            <a class="waves-effect waves-light" href="#shows">SHOWS</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#events">Events</a>
+                            <a class="waves-effect waves-light" href="#events">EVENTS</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light" href="#contact">Contact</a>
+                            <a class="waves-effect waves-light" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                     <!-- Side nav menu button--><span class="right show-on-medium-and-down hide-on-large-only"><a class="sidenav-toggle" id="sidenav-toggle" href="#" data-activates="slide-out">Menu</a></span></div>
@@ -83,10 +92,13 @@
         </div>
         <!-- Canvas background-->
         <!-- Hero section-->
-
+        <div id="preloader">
+          <div id="status"><video width="100%" autoplay><source src="./assets/vj_logo.mp4" type="video/mp4">Your browser does not support HTML5 video.</video></div>
+        </div>
         <section class="hero scrollspy" id="home">
             <div class="container">
                 <img class="home-logo" src="./assets/images/vj-logo.png"/>
+                <h6 class="home-heading">At VJ, talents don’t work for us. We work for them, to entertain you!</h6>
             </div>
         </section>
         <!-- Cases section-->
@@ -98,7 +110,7 @@
                     <div class="col s10 m6 l6 center ">
                       <br><br><br><br>
                       <div style="height:400px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
-                        <h2 class="about">who we are?</h2>
+                        <h2 class="about">who <strong>we</strong> are?</h2>
                         <p class="justify about"> VJ Entertainments is an enterprising and dynamic new arrival to the world of entertainment.
                           We are proud to present to you, a galaxy of gifted, versatile, and talented artistes in the
                           fields of music, dance, mimicry, & Instrumental Fusion. Our endeavor is to delight our audience
@@ -106,7 +118,7 @@
                           who have the ability to put together unique and imaginative shows that will dazzle and
                           delight audiences with their innovative content. Thus, our esteemed clients have a wide
                           variety of creative stage shows to choose from, to entertain their audience, and enrich their viewing pleasure.</p>
-                          <h2 class="about">what we do?</h2>
+                          <h2 class="about">what <strong> we </strong> do?</h2>
                           <p class="justify about"> At VJ, we value commitment and dedication, and look to achieve excellence in every area of our work. We pride ourselves on nurturing exceptional talent and creativity. We have built up expertise in every facet of stage shows. Every show that we present is meticulously and professionally managed, with a strong emphasis on creative excellence. We are not just a music band, a dance troupe or a group of mimics – although we offer all these shows, and more.  We look at every stage show holistically, so our shows are efficiently and courteously managed, even as they captivate audiences with their skillful artistes. The art of connecting artistes, both budding and experienced ones, with right audience is what we dream of doing here. Be it music, dance, or mimicry, we have mastered the art of curating and presenting the best talent in such a way that we are able to deliver a cloud nine experience to our audience every time!  We are empowered by talent, and for us, “The show must go on…”
                           <br>
                           At VJ, talents don’t work for us.  We work for them, to entertain you!</p>
@@ -125,56 +137,47 @@
                 </div>
                 <div class="row owl-carousel owl-team">
                     <div class="col s12 m6 l12 ">
+                      <div class="responsive-img-bg">
                         <img class="responsive-img" src="./assets/images/team/jithu.jpg" alt="Annie">
-                        <div class="name flow-text">Annie Redhat</div>
-                        <div class="title">CEO</div>
+                      </div>
+                        <div class="name flow-text">Jithu Mohandas</div>
+                        <div class="title">Chief - Special Projects <br> Event Planning</div>
                     </div>
                     <div class="col s12 m6 l12 ">
+                      <div class="responsive-img-bg">
                         <img class="responsive-img" src="./assets/images/team/Sandhya.jpg" alt="Carina">
-                        <div class="name flow-text">Carina Cornwell</div>
-                        <div class="title">UX/UI Engineer</div>
+                      </div>
+                        <div class="name flow-text">Sandhya Jithu</div>
+                        <div class="title">Chief - Finance & HR</div>
                     </div>
                     <div class="col s12 m6 l12 ">
+                      <div class="responsive-img-bg">
                         <img class="responsive-img" src="./assets/images/team/Jeevan.jpg" alt="Greg">
-                        <div class="name flow-text">Greg Willson</div>
-                        <div class="title">CTO</div>
+                      </div>
+                        <div class="name flow-text">Jeevan Menon</div>
+                        <div class="title">Chief - Client Relations <br> Event Operations</div>
                     </div>
                     <div class="col s12 m6 l12 ">
+                      <div class="responsive-img-bg">
                         <img class="responsive-img" src="./assets/images/team/Vinod_K_C.png" alt="Russell">
-                        <div class="name flow-text">Russell Branch</div>
-                        <div class="title">R&D</div>
+                      </div>
+                        <div class="name flow-text">Vinod K C</div>
+                        <div class="title">Chief - Commercial</div>
                     </div>
                     <div class="col s12 m6 l12 ">
+                      <div class="responsive-img-bg">
                         <img class="responsive-img" src="./assets/images/team/purushu_vj.jpg" alt="Pete">
-                        <div class="name flow-text">Pete</div>
-                        <div class="title">Developer</div>
+                      </div>
+                        <div class="name flow-text"><span> D Purushothaman</span></div>
+                        <div class="title">Chief - Artiste Relations <br> Hospitality</div>
                     </div>
                     <div class="col s12 m6 l12 ">
+                      <div class="responsive-img-bg">
                         <img class="responsive-img" src="./assets/images/team/vijeesh_gopal.jpg" alt="Olga">
-                        <div class="name flow-text">Olga Rockwell</div>
-                        <div class="title">Designer</div>
+                      </div>
+                        <div class="name flow-text">Vijeesh Gopal</div>
+                        <div class="title">[Playback Singer, Music Composer] <br> Chief - Music Wing</div>
                     </div>
-                    <div class="col s12 m6 l12 ">
-                        <img class="responsive-img" src="./assets/images/team/purushu_vj.jpg" alt="Pete">
-                        <div class="name flow-text">Pete</div>
-                        <div class="title">Developer</div>
-                    </div>
-                    <div class="col s12 m6 l12 ">
-                        <img class="responsive-img" src="./assets/images/team/vijeesh_gopal.jpg" alt="Olga">
-                        <div class="name flow-text">Olga Rockwell</div>
-                        <div class="title">Designer</div>
-                    </div>
-                    <div class="col s12 m6 l12 ">
-                        <img class="responsive-img" src="./assets/images/team/Jeevan.jpg" alt="Greg">
-                        <div class="name flow-text">Greg Willson</div>
-                        <div class="title">CTO</div>
-                    </div>
-                    <div class="col s12 m6 l12 ">
-                        <img class="responsive-img" src="./assets/images/team/Vinod_K_C.png" alt="Russell">
-                        <div class="name flow-text">Russell Branch</div>
-                        <div class="title">R&D</div>
-                    </div>
-
             </div>
         </section>
 
@@ -185,8 +188,10 @@
             <div class="container center">
                 <div class="row">
                     <div class="col s12">
-                        <h3 class="about" style="text-align:center; color:#fff;">The Reverie of Music</h3>
-                        <h6 style="text-align:center; color:#fff; margin-top:-20px;">Our music band is launching on 17th August 2018</h6>
+                      <br>
+                      <br>
+                        <h4 class="about" style="text-align:center; color:#fff;">The Reverie of Music</h4>
+                        <h6 style="text-align:center; color:#fff; margin-top:-23px;">Our music band is launching on 17th August 2018</h6>
                     </div>
                 </div>
                 <br><br>
@@ -197,7 +202,7 @@
                     </div>
                     <div class="col s12 m12 l12 ">
                         <div class="white-bg"><i class="icon-basic-accelerator"></i></div>
-                        <p class="show">Time is the greatest game changer. It challenges everything, even the greatest works of art. But, some creations can withstand the test of time. They are from the masters who sculpt on time. And their masterpieces survive that greatest test. In music too, there are evergreen pieces of art. Born in the past, still fresh at the present and will remain fresh in the future too. We call them evergreen songs. They were created not just for the generation to which they belong, but for the happiness of all the mankind of all the time. VJ has a special show comprising evergreen songs, which has the hits of 70's, 80's 90's etc.</p>                    </div>
+                        <p class="show">Time is the greatest game changer. It challenges everything, even the greatest works of art. But, some creations can withstand the test of time. They are from the masters who sculpt on time. And their masterpieces survive that greatest test. In music too, there are evergreen pieces of art. Born in the past, still fresh at the present and will remain fresh in the future too. We call them evergreen songs. They were created not just for the generation to which they belong, but for the happiness of all the mankind of all the time. VJ has a special show comprising evergreen songs, which has the hits of 70's, 80's 90's etc.</p></div>
                     <div class="col s12 m12 l12 ">
                         <div class="white-bg"><i class="icon-basic-target"></i></div>
                           <p class="show">There is nothing in the world so much like prayer as music is. It points to the divine rationality and beauty of God. 'Geethanjali', the devotional songs show by VJ, offers its listerners a  unique mystical and spiritual experience. Our dedicated and experienced musicians have a slew of evergreen devotional songs to fill your hearts with heavenly bliss. Blessed are our artists with the magical flute of Krishna, the resonating Damaru of Shiva, the soothing veena nadam of  Saraswathi Devi... Here music pray for us; the prayer that can rejuvenate every soul.</p>
@@ -235,12 +240,11 @@
                       <div class="container">
                         <img src="./assets/images/tab-bg.png" class="bg" style="width:100%">
                         <img src="./assets/images/events1.jpg" class="fg" style="width:83%">
-                        <a class="modal-trigger" href="#youtube1"><img class="youtube" src="./assets/images/owl.video.play.png" alt="Russell"></a>
+                        <a class="modal-trigger" href="#preload"><img class="youtube" src="./assets/images/owl.video.play.png" alt="Russell"></a>
                       </div>
                       <div class="event-content">
                           <h5>Sargadhwani Presents</h5>
-                          <h5>K J Yesudas Musical Night</h5>
-                          <p>Cochin Internation Airport<br>
+                          <p><strong>K J Yesudas Musical Night</strong> <br> Cochin Internation Airport<br>
                           Cochin, Kerala</p>
                       </div>
 
@@ -252,10 +256,8 @@
                         <a href="#"><img class="youtube" src="./assets/images/owl.video.play.png" alt="Russell"></a>
                       </div>
                       <div class="event-content">
-                          <h5>Sargadhwani Presents</h5>
-                          <h5>K J Yesudas Musical Night</h5>
-                          <p>Cochin Internation Airport<br>
-                          Cochin, Kerala</p>
+                        <h5>Nirvana Presents</h5>
+                        <p><strong>Sobhana & Team</strong> <br> Sharjah Indoor Stadium Sharjah, UAE</p>
                       </div>
 
                     </div>
@@ -266,24 +268,8 @@
                         <a href="#"><img class="youtube" src="./assets/images/owl.video.play.png" alt="Russell"></a>
                       </div>
                       <div class="event-content">
-                          <h5>Sargadhwani Presents</h5>
-                          <h5>K J Yesudas Musical Night</h5>
-                          <p>Cochin Internation Airport<br>
-                          Cochin, Kerala</p>
-                      </div>
-
-                    </div>
-                    <div class="col s12 l12 events">
-                      <div class="container">
-                        <img src="./assets/images/tab-bg.png" class="bg" style="width:100%">
-                        <img src="./assets/images/events1.jpg" class="fg" style="width:83%">
-                        <a href="#"><img class="youtube" src="./assets/images/owl.video.play.png" alt="Russell"></a>
-                      </div>
-                      <div class="event-content">
-                          <h5>Sargadhwani Presents</h5>
-                          <h5>K J Yesudas Musical Night</h5>
-                          <p>Cochin Internation Airport<br>
-                          Cochin, Kerala</p>
+                        <h5>Rasam Presents</h5>
+                        <p><strong>Harisree Ashokan & Team</strong> <br> Al Khalidiya University Theatre Kuwait</p>
                       </div>
 
                     </div>
@@ -297,30 +283,26 @@
             <div class="modal-cover"><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/ZT3F_GZQQ1E?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
         </div>
 
+
+
         <!-- Contact section-->
 
         <section class="scrollspy" id="contact">
             <div class="container">
                 <div class="row">
-                  <div class="col s5 center contact">
+                  <div class="col s6 contact">
                     <br>
                     <br>
                     <br>
                     <br>
                       <img class="home-logo" src="./assets/images/vj-logo.png"/>
-
+                      <br>
+                      <br>
+                      <br>
+                      <br>
                           <address>Kannamkulath Buildings  |  Ward 6  |  # 320  |  1st Floor
-                            <br>East Kadungalloor  |  UC College PO  |  Aluva - 683 102
+                            <br>East Kadungalloor  |  UC College PO  |  Aluva - 683 102 <br>+91 90485 98712  |  +91 75589 40101 | <a href="mailto:vj@vjentertainments.in">vj@vjentertainments.in </a>
                           </address>
-                          <a class="underline waves-effect waves-light" href="https://maps.google.com?daddr=B+R+James+30+W=47th+St+NY+10036" target="_blank">Get directions &nearr;</a>
-
-                          <p>
-                              <a class="underline waves-effect waves-light" href="mailto:vj@vjentertainments.in">vj@vjentertainments.in</a>
-                              <br>+91 90485 98712  |  +91 75589 40101  </p>
-
-                  </div>
-                  <div class="col s1 ">
-
                   </div>
                   <div class="col s6">
                     <form id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
@@ -354,14 +336,14 @@
                         </div>
                         <div class="row">
                             <div class="col s12 center">
-                                <button class="btn btn-large btn-flat waves-effect waves-light" id="send-message" type="submit">Send</button>
+                                <button class="btn btn-large btn-flat waves-effect waves-light" id="send-message" style="color:#fff;" type="submit">Send</button>
                             </div>
                         </div>
                     </form>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col s12 center">
+                  <div class="col s12 booking">
                     <h5>FOR BOOKINGS, CONTACT:</h5>
                     <p>Chennai: +91 99622 26893  |  Bangalore: +91 98450 93613  |  +91 97390 45120  |  Kuwait: +965 9970 6180  |  Oman: +968 9749 8119<br>
                     UAE: +971 56 114 6780  |  Qatar: +974 7002 7062  |  Australia: +61 469 013 262  |  USA: +1 267 632 1557  |  UK: +44 7958 186 098</p>
@@ -374,8 +356,8 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col s12 l8"><br>&nbsp;Copyright © 2018, VJ Entertainments Pvt Ltd. All rights reserved.</div>
-                    <div class="col s12 l4 icons">
+                    <div class="col s10  center l10"><br>&nbsp;Copyright © 2018, VJ Entertainments Pvt Ltd. All rights reserved.</div>
+                    <div class="col s2 l2 center icons">
                         <a  href="#!"><img class="social" src="./assets/images/twitter.png"  alt="twitter"></a>
                         <a  href="#!"><img class="social" src="./assets/images/youtube.png"  alt="youtube"></a>
                         <a  href="#!"><img class="social" src="./assets/images/fb.png" alt="Facebook"></a>
@@ -388,13 +370,13 @@
 
 
         <!-- Libraries-->
-        <script src="./libs/jquery/jquery.min.js"></script>
         <script src="./libs/materialize/js/materialize.min.js"></script>
         <!-- Nana scripts-->
         <script src="./assets/js/config.js"></script>
         <script src="./assets/js/nana.js"></script>
         <script src="./assets/js/neon-bubbles-purple.js"></script>
         <script src="./assets/js/owl.carousel.js"></script>
+
         <script type="text/javascript">
           $(document).ready(function(){
             $('.owl-team').owlCarousel({

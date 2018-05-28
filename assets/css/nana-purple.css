@@ -70,6 +70,11 @@ button {
 }
 
 
+nav {
+  background-image: url("../images/bg1.png") !important;
+  background-position: center;
+  background-size: cover !important;
+}
 nav .brand-logo {
   letter-spacing: .5rem;
   text-transform: uppercase;
@@ -113,6 +118,7 @@ h1 {
 }
 #about{
    background-image: url("../images/bg2.png") !important;
+   padding-top:-200px;
    background-position: center;
    background-repeat:repeat;
    background-size: cover;
@@ -143,6 +149,11 @@ h1 {
    height: 100%;
 }
 
+.home-heading{
+  margin-top: 250px;
+  color: #fff;
+  font-family: "DINLight";
+}
 
 .event_pic{
   width: 42.5%;
@@ -161,7 +172,7 @@ h1 {
 .container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .container img {
@@ -190,10 +201,32 @@ h1 {
 }
 
 .event-content{
-  text-align:center;
+  text-align:left;
   color:#fff;
   margin-top: 50px;
+  margin-left: 5rem;
 }
+.event-content h5{
+  text-align:left;
+  color:#fff;
+  font-size: 1.2rem;
+}
+.event-content strong{
+  text-align:left;
+  color:#fff;
+  font-size: 1rem;
+}
+
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 99;
+    height: 100%;
+ }
+
 
 #contact{
    background-image: url("../images/section5.jpg") !important;
@@ -206,6 +239,17 @@ h1 {
 .contact .home-logo{
   width: 100% !important;
 }
+address{
+  font-size: 15px;
+  margin-left: 5rem !important;
+  color: #fff;
+}
+address a{
+  color: #fff;
+}
+.booking{
+  margin-left: 5rem !important;
+}
 footer{
   background-image: url("../images/footer1.jpg") !important;
   background-position: center;
@@ -215,7 +259,7 @@ footer{
 }
 
 .social{
-  width: 50px !important;
+  width: 30px !important;
   margin-right: 10px;
 }
 
@@ -243,7 +287,8 @@ font-style : normal;
   position: absolute;
   top: 40%;
   text-align: center;
-  width: 60px; height: 60px;
+  width: 40px !important;
+   height: 40px !important;
 }
 .owl-next,
 .owl-prev {
@@ -272,7 +317,7 @@ font-style : normal;
 
 
 .justify{
-  text-align:justify;
+  text-align:justify !importantr;
 }
 @font-face {
     font-family: DINLight;
@@ -287,7 +332,23 @@ font-style : normal;
   color:#3399cc;
   font-family: "DINLight";
   text-align: left;
+  font-weight: 100;
 }
+.name{
+  color:#fff;
+  font-family: "DINLight";
+  text-align: center;
+  font-weight: 500;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+.title{
+  color:#fff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12px;
+}
+
 .about-bold{
   color:#3399cc;
   font-family: "DINBdA";
@@ -299,7 +360,7 @@ font-style : normal;
   padding: 20px;
 }
 .show{
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 13px;
   color:#fff;
   font-family: "DINLight";
@@ -449,15 +510,25 @@ address {
 .responsive-img {
   width: 100%;
   border-width: 10px;
-  padding: 0px !important;
-  border-style: solid;
-  border-color: linear-gradient(to right, #0099ff , #000033);
+  padding: 10px !important;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
     border-radius: 50%;
 
 }
 
+.responsive-img-bg {
+  width: 100%;
+
+  -webkit-linear-gradient(left, #0099ff 0%, #000033 100%), -webkit-linear-gradient(left, #0099ff 0%, #000033 100%) !important;
+  background-image: -moz-linear-gradient(left, #0099ff 0%, #000033 100%), -moz-linear-gradient(left, #0099ff 0%, #000033 100%) !important;
+  background-image: -o-linear-gradient(left, #0099ff 0%, #000033 100%), -o-linear-gradient(left, #0099ff 0%, #000033 100%) !important;
+  background-image: linear-gradient(to right, #0099ff 0%, #000033 100%), linear-gradient(to right, #0099ff 0%, #000033 100%) !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+    border-radius: 50%;
+
+}
 .canvas {
   position: absolute;
   top: 0;
