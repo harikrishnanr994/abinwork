@@ -97,6 +97,7 @@ nav .brand-logo img {
   margin-bottom:-20px;
 }
 
+
 h1 {
   font-size: 10rem;
   font-weight: 700;
@@ -104,6 +105,11 @@ h1 {
 }
 .home-logo{
   width: 40% !important;
+   margin: auto;
+}
+.home-logo1{
+  width: 30% !important;
+  margin-bottom: 30rem;
 }
 
 #home {
@@ -113,8 +119,27 @@ h1 {
    background-size: cover;
    width: 100% !important;
    height: 100%;
-   padding-top: 50px;
-   padding-bottom: 20px;
+}
+.flexbox{
+  width: 100%;
+  height: 100%;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+}
+.flexbox-column{
+   -webkit-flex-direction: column; /* Safari 6.1+ */
+   flex-direction: column;
+}
+.flexbox-row{
+   -webkit-flex-direction: row; /* Safari 6.1+ */
+   flex-direction: row;
 }
 #about{
    background-image: url("../images/bg2.png") !important;
@@ -150,7 +175,6 @@ h1 {
 }
 
 .home-heading{
-  margin-top: 250px;
   color: #fff;
   font-family: "DINLight";
 }
@@ -242,7 +266,9 @@ h1 {
    color:#fff;
 }
 .contact .home-logo{
-  width: 100% !important;
+  width: 50% !important;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 address{
   font-size: 15px;
@@ -295,23 +321,26 @@ font-style : normal;
 }
 .owl-next {
   right: 0;
-  margin-right:-100px;
+  margin-right:-150px;
 }
 .owl-prev {
   left: 0;
-  margin-left:-100px;
+  margin-left:-150px;
 }
 .owl-next:hover .icon,
 .owl-prev:hover .icon {
   background: rgba(48, 117, 70, .0);
   color: rgba(255, 255, 255, .9);
 }
-.icon-arrow-left7 { left: 0; }
-.icon-arrow-left7:before { content: "\f053"; }
-.icon-arrow-right7 { right: 0; }
-.icon-arrow-right7:before { content: "\f054"; }
+.owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    font-family: 'fontAwesome';
 
-
+}
+.icon{
+  font-size: 30px !important;
+}
 .justify{
   text-align:justify !important;
 }
@@ -332,11 +361,11 @@ font-style : normal;
 }
 .name{
   color:#fff;
-  font-family: "DINLight";
+  font-family: "DINBdA";
   text-align: center;
   font-weight: 500;
   margin-top: 30px;
-  font-size: 1.5rem;
+  font-size: 14px !important;
 }
 .title{
   color:#fff;
@@ -374,6 +403,10 @@ font-style : normal;
   .home-logo{
     width: 60%;
   }
+  .home-logo1{
+    width: 30% !important;
+    margin-bottom: 30rem;
+  }
   .container .fg{
     margin-top: -160px;
     margin-left: 25px;
@@ -395,6 +428,10 @@ font-style : normal;
   }
   .home-logo{
     width: 70%;
+  }
+  .home-logo1{
+    width: 30% !important;
+    margin-bottom: 30rem;
   }
 
 
@@ -618,13 +655,14 @@ nav {
 nav a {
   color: #0099cc;
 }
-
-
+nav ul:not(.side-nav) {
+  padding-right: 2rem;
+}
 nav ul:not(.side-nav) a {
   position: relative;
   padding: 0;
   margin: 0 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #0099cc;
 }

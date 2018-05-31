@@ -2963,7 +2963,7 @@
 	Navigation.Defaults = {
 		nav: true,
 		navText: [
-			"<span class='icon icon-arrow-left7'></span>","<span class='icon icon-arrow-right7'></span>"
+			"<i class='fa icon fa-angle-left'></i>", "<i class='fa icon fa-angle-right'></i>"
 		],
 		navSpeed: false,
 		navElement: 'button type="button" role="presentation"',
