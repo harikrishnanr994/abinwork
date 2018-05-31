@@ -192,7 +192,9 @@ h1 {
   position: fixed;
   z-index: 20;
 }
-
+.icons{
+  margin-top: 1rem;
+}
 .container{
     position: relative;
     width: 100%;
