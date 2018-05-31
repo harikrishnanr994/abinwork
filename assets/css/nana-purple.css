@@ -194,7 +194,10 @@ h1 {
 }
 
 .icons{
+  float:right !important;
   margin-top: 1rem;
+  margin-right: -8rem !important;
+  margin-left: 2rem !important;
 }
 .container{
     position: relative;
@@ -291,7 +294,8 @@ footer{
   color:#fff;
 }
 .copyright{
-  margin-left: 2rem;
+  margin-left: 4rem !important;
+  margin-right: -4rem;
 }
 .social{
   width: 30px !important;
@@ -361,6 +365,7 @@ font-style : normal;
   font-family: "DINLight";
   text-align: left;
   font-weight: 100;
+  padding-right: 30px;
 }
 .name{
   color:#fff;
@@ -390,6 +395,7 @@ font-style : normal;
 .show{
   margin-top: 1em;
   padding-top:1rem;
+  padding-right:0.5rem;
   font-size: 13px;
   color:#fff;
   font-family: "DINLight";
