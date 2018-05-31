@@ -50,11 +50,16 @@ h5:         1.64rem/110%
 -----------------------------------------------------------------------------------------*/
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-
+  width: 100%;
+  height: 100%;
 }
-body, html {
+body{
     height: 100%;
-    width: 100%;
+    width: 100% !important;
+    margin:0;
+    padding:0;
+    overflow-x:auto;
+    overflow-y: scroll !important;
 }
 
 body,
@@ -164,6 +169,7 @@ h1 {
    background-repeat:repeat;
    background-size: cover;
    height: 100%;
+   width: 100%;
 }
 
 #events{
@@ -186,12 +192,7 @@ h1 {
   margin-bottom: 2.8rem;
   z-index: 5;
 }
-.youtube{
-  width: 100px;
-  height: auto;
-  position: fixed;
-  z-index: 20;
-}
+
 .icons{
   margin-top: 1rem;
 }
@@ -203,18 +204,16 @@ h1 {
 
 .container .fg{
   margin-top: 20%;
-  font-size: 10px;
-  z-index: 10;
+
 }
 .container .youtube {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px !important;
+    width: 50px !important;
     height: auto;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
 }
 
 .container .btn:hover {
@@ -291,7 +290,9 @@ footer{
   background-size: cover;
   color:#fff;
 }
-
+.copyright{
+  margin-left: 2rem;
+}
 .social{
   width: 30px !important;
   margin-right: 10px;
@@ -318,7 +319,7 @@ font-style : normal;
 .owl-prev {
   height: 100%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 20%;
 }
 .owl-next {
@@ -410,14 +411,12 @@ font-style : normal;
     margin-bottom: 30rem;
   }
   .container .fg{
-    margin-top: -160px;
     margin-left: 25px;
     z-index: 10;
   }
 }
 @media only screen and (max-width: 1200px) {
   .container .fg{
-    margin-top: -160px;
     margin-left: 25px;
     z-index: 10;
   }
@@ -429,18 +428,60 @@ font-style : normal;
     -webkit-text-stroke-width: 2px;
   }
   .home-logo{
-    width: 70%;
+    width: 90%!important;
   }
   .home-logo1{
     width: 30% !important;
     margin-bottom: 30rem;
   }
-
+  .booking{
+    margin-left: 1rem !important;
+    margin-top: -1rem !important;
+  }
+  .container .fg{
+    margin-top: 20%;
+    width: 80%;
+    margin-left: 10px !important;
+  }
+  .copyright{
+    margin-left: 0rem !important;
+  }
+  .icon{
+    font-size: 20px !important;
+  }
+  .owl-next,
+  .owl-prev {
+    height: 100%;
+    position: absolute;
+    bottom: 0 !important;
+    margin-top: 55% !important;
+    width: 20%;
+  }
 
 h2 {
   font-size: 4.5rem;
   font-weight: 600;
   -webkit-text-stroke-width: 2px;
+}
+.owl-next {
+  right: 0;
+  margin-right:-30px;
+}
+.owl-prev {
+  left: 0;
+  margin-left:-20px;
+}
+.responsive-img-bg {
+  width: 80% !important;
+
+  -webkit-linear-gradient(left, #0099ff 0%, #000033 100%), -webkit-linear-gradient(left, #0099ff 0%, #000033 100%) !important;
+  background-image: -moz-linear-gradient(left, #0099ff 0%, #000033 100%), -moz-linear-gradient(left, #0099ff 0%, #000033 100%) !important;
+  background-image: -o-linear-gradient(left, #0099ff 0%, #000033 100%), -o-linear-gradient(left, #0099ff 0%, #000033 100%) !important;
+  background-image: linear-gradient(to right, #0099ff 0%, #000033 100%), linear-gradient(to right, #0099ff 0%, #000033 100%) !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+    border-radius: 50%;
+
 }
 }
 @media only screen and (max-width: 992px) {
@@ -449,7 +490,6 @@ h2 {
     -webkit-text-stroke-width: 3px;
   }
   .container .fg{
-    margin-top: -160px;
     margin-left: 25px;
     z-index: 10;
   }
