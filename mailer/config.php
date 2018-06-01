@@ -1,12 +1,12 @@
 <?php
 
-$my_email = 'my@email.com';
+$my_email = 'abinvarghese@live.in';
 
 $SMTP = array(
     'enabled' => true,
-    'host' => 'smtp.gmail.com',
-    'username' => 'user@gmail.com',
-    'password' => 'password12345',
-    'port' => 465,
-    'encryption' => 'ssl'
+    'host' => 'smtp.ipage.com',
+    'username' => 'vj@vjentertainments.in',
+    'password' => 'Jmm6340#',
+    'port' => 587,
+
 );
