@@ -246,6 +246,8 @@ h1 {
      left: 0;
      right: 0;
      bottom: 0;
+     min-height: 100% !important;
+     overflow: hidden;
      z-index: 299;
     height: 100%;
     width: 100%;
@@ -254,6 +256,8 @@ h1 {
       width: 100%;
       height: 100%;
       position: absolute;
+      min-height: 100% !important;
+      overflow: hidden;
       top: 0;
       left: 0;
       right: 0;
@@ -261,6 +265,22 @@ h1 {
       z-index: 2000;
   }
 
+  #status:fullscreen, #status:-ms-fullscreen,   #status:-moz-full-screen, #status:-webkit-full-screen {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      min-height: 100% !important;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2000;
+  }
+  video:-webkit-full-screen::-webkit-media-controls-panel, video:-webkit-full-screen::-webkit-media-controls, video:-webkit-full-screen::-webkit-media-text-track-container {
+      display: none !important;
+      opacity: 0;
+  }
 #contact{
    background-image: url("../images/section5.jpg") !important;
    background-position: center;
@@ -351,27 +371,20 @@ font-style : normal;
 .justify{
   text-align:justify !important;
 }
-@font-face {
-    font-family: DINLight;
-    src: url(../fonts/DINLight.ttf);
-}
-@font-face {
-    font-family: DINBdA;
-    src: url(../fonts/DINBdA.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 .about{
   color:#3399cc;
-  font-family: "DINLight";
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   font-weight: 100;
   padding-right: 30px;
 }
 .name{
   color:#fff;
-  font-family: "DINBdA";
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 30px;
   font-size: 14px !important;
 }
@@ -384,7 +397,7 @@ font-style : normal;
 
 .about-bold{
   color:#3399cc;
-  font-family: "DINBdA";
+  font-family: 'Open Sans', sans-serif;
 }
 
 .white-bg{
@@ -398,7 +411,6 @@ font-style : normal;
   padding-right:0.5rem;
   font-size: 13px;
   color:#fff;
-  font-family: "DINLight";
   text-align: justify;
   line-height:1.5em;
   height:15em;
